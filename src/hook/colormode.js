@@ -1,8 +1,8 @@
 const { createContext, useContext } = require("react");
 
-const colorModeContext = createContext({ toggleColorMode: () => {} });
+const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
-const useColorModeContext = useContext(colorModeContext);
+const useColorModeContent = ()=>useContext(ColorModeContext);
 
-export { colorModeContext };
-export default useColorModeContext;
+export { ColorModeContext };
+export default useColorModeContent;
